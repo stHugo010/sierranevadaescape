@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Envía una postal digital desde Sierra Nevada Escape - Comparte momentos especiales con tus seres queridos.">
+    <title>Enviar Postal | Sierra Nevada Escape</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header role="banner">
+        <nav role="navigation" aria-label="Navegación principal">
+            <div class="nav-container">
+                <h1 class="logo"><a href="index.html">Sierra Nevada Escape</a></h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="postal.html" aria-current="page">Enviar Postal</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h2 id="page-title">Envía una Postal Digital</h2>
+                <p class="page-subtitle">Comparte la magia de la montaña con tus seres queridos</p>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="postal-intro" aria-labelledby="intro-title">
+            <div class="container">
+                <h3 id="intro-title" class="sr-only">Sobre las postales digitales</h3>
+                <div class="intro-content">
+                    <p>En Sierra Nevada Escape creemos en el poder de compartir momentos especiales. Nuestras postales
+                        digitales te permiten enviar un pedacito de la montaña a las personas que más quieres, estén
+                        donde estén.</p>
+
+                    <p>Elige una de nuestras imágenes favoritas del refugio y la naturaleza que nos rodea, escribe un
+                        mensaje personal y nosotros nos encargamos del resto. Tu postal llegará directamente a la
+                        bandeja de entrada de tu destinatario, llevando consigo el espíritu de las montañas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Postal -->
+        <section id="formulario" class="postal-section" aria-labelledby="form-title">
+            <div class="container">
+                <h3 id="form-title">Crea Tu Postal Personalizada</h3>
+
+                <form id="postal-form" class="postal-form">
+                    <fieldset>
+                        <legend>Paso 1: Selecciona una imagen del resort</legend>
+                        <p class="fieldset-description">Elige la imagen que mejor represente tu experiencia en Sierra
+                            Nevada Escape</p>
+
+                        <div class="image-selector" role="radiogroup" aria-label="Selecciona una imagen para la postal">
+                            <label class="image-option">
+                                <input type="radio" name="postal-image" value="0" required aria-required="true">
+                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop"
+                                    alt="Opción 1: Montañas nevadas al amanecer con cielo rosado">
+                                <span class="image-label">Montañas al amanecer</span>
+                            </label>
+
+                            <label class="image-option">
+                                <input type="radio" name="postal-image" value="1" aria-required="true">
+                                <img
+                                    src="https://images.unsplash.com/photo-1614703501456-c3b535e3fad0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                <span class="image-label">Refugio en invierno</span>
+                            </label>
+
+                            <label class="image-option">
+                                <input type="radio" name="postal-image" value="2" aria-required="true">
+                                <img
+                                    src="https://images.unsplash.com/photo-1646147188656-a5b181ff38c4?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                <span class="image-label">Esquí en las pistas</span>
+                            </label>
+
+                            <label class="image-option">
+                                <input type="radio" name="postal-image" value="3" aria-required="true">
+                                <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Opción 4: Sendero de montaña entre bosque y picos">
+                                <span class="image-label">Rutas de senderismo</span>
+                            </label>
+
+                            <label class="image-option">
+                                <input type="radio" name="postal-image" value="4" aria-required="true">
+                                <img src="https://images.unsplash.com/photo-1574610758891-5b809b6e6e2e?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Opción 5: Refugio bajo cielo estrellado nocturno">
+                                <span class="image-label">Noches estrelladas</span>
+                            </label>
+
+                            <label class="image-option">
+                                <input type="radio" name="postal-image" value="5" aria-required="true">
+                                <img src="https://images.unsplash.com/photo-1521022969448-49639904ed7b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Opción 6: Interior acogedor con chimenea de piedra">
+                                <span class="image-label">Chimenea del refugio</span>
+                            </label>
+                        </div>
+                        <div role="alert" aria-live="polite" class="error-message" id="image-error"></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Paso 2: Información del remitente y destinatario</legend>
+
+                        <div class="form-group">
+                            <label for="sender-name">Tu nombre <span aria-label="campo obligatorio">*</span></label>
+                            <input type="text" id="sender-name" name="sender-name" required
+                                aria-describedby="sender-name-error sender-name-help" autocomplete="name"
+                                placeholder="Ej: María García">
+                            <span id="sender-name-help" class="help-text">El nombre que aparecerá como remitente de la
+                                postal</span>
+                            <div role="alert" aria-live="polite" class="error-message" id="sender-name-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recipient-name">Nombre del destinatario <span
+                                    aria-label="campo obligatorio">*</span></label>
+                            <input type="text" id="recipient-name" name="recipient-name" required aria-required="true"
+                                aria-describedby="recipient-name-error recipient-name-help" autocomplete="off"
+                                placeholder="Ej: Juan Martínez">
+                            <span id="recipient-name-help" class="help-text">¿A quién va dirigida tu postal?</span>
+                            <div role="alert" aria-live="polite" class="error-message" id="recipient-name-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recipient-email">Email del destinatario <span
+                                    aria-label="campo obligatorio">*</span></label>
+                            <input type="email" id="recipient-email" name="recipient-email" required
+                                aria-describedby="recipient-email-error recipient-email-help" autocomplete="email"
+                                placeholder="destinatario@ejemplo.com">
+                            <span id="recipient-email-help" class="help-text">La postal será enviada a esta dirección de
+                                correo</span>
+                            <div role="alert" aria-live="polite" class="error-message" id="recipient-email-error"></div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Paso 3: Tu mensaje personalizado</legend>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje personalizado <span
+                                    aria-label="campo obligatorio">*</span></label>
+                            <textarea id="message" name="message" rows="6" required aria-required="true"
+                                aria-describedby="message-error message-help message-counter" maxlength="500"
+                                placeholder="Escribe aquí tu mensaje... Comparte tus experiencias en la montaña, lo que más te ha gustado del refugio o simplemente envía un saludo especial."></textarea>
+                            <div class="textarea-footer">
+                                <span id="message-help" class="help-text">Máximo 500 caracteres</span>
+                                <span id="message-counter" class="char-counter" aria-live="polite">0/500</span>
+                            </div>
+                            <div role="alert" aria-live="polite" class="error-message" id="message-error"></div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <a href="confirmacion.html" class="submit-button">
+                            <span>Enviar Postal</span>
+                        </a>
+                        <button type="reset" class="reset-button">
+                            <span>Limpiar formulario</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Modal de confirmación -->
+                <div id="success-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true"
+                    hidden>
+                    <div class="modal-content">
+                        <h3 id="modal-title">¡Postal enviada con éxito! 🎉</h3>
+                        <p>Tu postal ha sido enviada correctamente. El destinatario la recibirá en su bandeja de entrada
+                            en los próximos minutos.</p>
+                        <p class="modal-note">Gracias por compartir la magia de Sierra Nevada Escape.</p>
+                        <button id="close-modal" class="submit-button">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="postal-tips" aria-labelledby="tips-title">
+            <div class="container">
+                <h3 id="tips-title">Consejos para Tu Postal</h3>
+                <div class="tips-grid">
+                    <article class="tip-card">
+                        <h4>Sé auténtico</h4>
+                        <p>Comparte tus sentimientos y experiencias reales. Las postales más especiales son aquellas que
+                            vienen del corazón.</p>
+                    </article>
+
+                    <article class="tip-card">
+                        <h4>Cuenta detalles</h4>
+                        <p>Menciona momentos específicos: el amanecer desde tu habitación, el sabor del chocolate
+                            caliente tras una caminata, las estrellas que viste anoche.</p>
+                    </article>
+
+                    <article class="tip-card">
+                        <h4>Personaliza</h4>
+                        <p>Piensa en el destinatario. ¿Qué le gustaría saber? ¿Qué lugar del refugio le encantaría? ¿Qué
+                            actividad debería probar?</p>
+                    </article>
+
+                    <article class="tip-card">
+                        <h4>Invita a visitar</h4>
+                        <p>Si te está encantando la experiencia, invita a tu destinatario a que se anime a venir. Las
+                            mejores historias se viven juntos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <section class="postal-faq" aria-labelledby="faq-title">
+            <div class="container">
+                <h3 id="faq-title">Preguntas Frecuentes</h3>
+
+                <dl class="faq-list">
+                    <div class="faq-item">
+                        <dt>¿Cuánto tarda en llegar la postal?</dt>
+                        <dd>Las postales digitales se envían inmediatamente después de completar el formulario. El
+                            destinatario debería recibirla en su bandeja de entrada en los próximos 5-10 minutos.</dd>
+                    </div>
+
+                    <div class="faq-item">
+                        <dt>¿Puedo enviar varias postales?</dt>
+                        <dd>¡Por supuesto! Puedes enviar tantas postales como desees a diferentes personas. No hay
+                            límite.</dd>
+                    </div>
+
+                    <div class="faq-item">
+                        <dt>¿Las postales son gratuitas?</dt>
+                        <dd>Sí, el servicio de postales digitales es completamente gratuito para todos nuestros
+                            huéspedes como parte de la experiencia Sierra Nevada Escape.</dd>
+                    </div>
+
+                    <div class="faq-item">
+                        <dt>¿Qué pasa si me equivoco en el email?</dt>
+                        <dd>Asegúrate de revisar bien la dirección de email antes de enviar. Una vez enviada, no podemos
+                            recuperar o redirigir la postal.</dd>
+                    </div>
+
+                    <div class="faq-item">
+                        <dt>¿Puedo guardar una copia de mi postal?</dt>
+                        <dd>Actualmente este servicio envía la postal directamente al destinatario. Te recomendamos
+                            hacer una captura de pantalla de tu mensaje si quieres guardar una copia.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+    </main>
+
+    <!-- Accessibility Features Info -->
+    <section class="accessibility-info" aria-labelledby="accessibility-title">
+        <h2 id="accessibility-title" class="sr-only">Información de accesibilidad</h2>
+        <div class="wcag-badges">
+            <img src="https://www.w3.org/WAI/wcag2AA-blue.png"
+                alt="Nivel de conformidad AA de las Pautas de Accesibilidad para el Contenido Web 2.2" width="88"
+                height="31">
+        </div>
+    </section>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Resort Sierra Nevada Escape</h3>
+                    <p>Tu refugio en la montaña desde 1985</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navegación</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="postal.html">Enviar Postal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <address>
+                        <p>Carretera de la Sierra, km 45</p>
+                        <p>18196 Sierra Nevada, Granada</p>
+                        <p>Tel: <a href="tel:+34958123456">+34 958 12 34 56</a></p>
+                        <p>Email: <a href="mailto:info@sierranevadaescape.com">info@sierranevadaescape.com</a></p>
+                    </address>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Accesibilidad</h3>
+                    <p>Este sitio cumple con las pautas WCAG 2.2 nivel AA</p>
+                    <p><a href="#main-content">Volver arriba</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sierra Nevada Escape. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
